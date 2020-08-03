@@ -1,17 +1,11 @@
 .main-image {
-    height: 90vh;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* height: 100vh; */
     background-image: url("https://via.placeholder.com/3000x1200.png?text=Foto+do+interior");
     background-position: center; /* Center the image */
     background-size: cover;
 }
 
-.main-image-after {
-    content: '';
-}
 
-.main-image > .gradient-foot {
-    margin-top: auto;
-    margin-bottom: 0;
-    padding-bottom: 9vh;
-    background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1));
-}
