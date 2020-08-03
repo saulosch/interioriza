@@ -5,23 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Interioriza</title>
     
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
     <style>
-        html { 
-            background: url("images/balaton-hungary-1382653s.jpg") no-repeat center center fixed; 
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
+
+        #main-container { 
+            background-color: #888;
+            background-image: url("images/balaton-hungary-1382653s.jpg");
+            background-repeat: no-repeat;
+            background-position: center ;
             background-size: cover;
-        }
-
-        body {
-            padding: 0;
-            margin: 0;
-        }
-
-        a {
-            text-decoration: none;
-            color: #333;
+            background-attachment: fixed;
+            min-height: 95vh;
         }
 
         div.main-logo {
@@ -30,16 +25,10 @@
             text-align: center;
         }
 
-        div.main-logo > img {
-            padding: 0;
-            width: 40vh;
-            height: 40vh;
-            margin-top: 20vh;
-            margin-bottom: 20vh;
-            margin-left: auto;
-            margin-right: auto;
-        } /* 80% ja foi */
-        
+        div.row {
+            margin: auto !important;
+        }
+       
         div.social {
             text-align: center;
             display: flex;
@@ -55,50 +44,58 @@
             min-width: 200px;
         }
 
+        .stroke {
+            text-shadow:
+                -2px -2px 5px #fff,  
+                2px -2px 5px #fff,
+                -2px 2px 5px #fff,
+                2px 2px 5px #fff;
+        }
+
+        .stroke-black {
+            text-shadow:
+                -2px -2px 5px #000,  
+                2px -2px 5px #000,
+                -2px 2px 5px #000,
+                2px 2px 5px #000;
+        }
+
         .social-label {
-            font-size: 2em;
             font-family: 'Roboto', sans-serif;
             margin-left: 10px;
             color: #fff;
-            text-shadow:
-                -1px -1px 0 #000,  
-                1px -1px 0 #000,
-                -1px 1px 0 #000,
-                1px 1px 0 #000;
         }
 
          /* Style all font awesome icons */
-        .fa {
-            padding: 20px;
-            font-size: 30px;
-            width: 30px;
+        .faz {
+            padding: 10px;
+            /* width: 30px; */
             text-align: center;
             text-decoration: none;
             border-radius: 50%;
         }
 
         /* Add a hover effect if you want */
-        .fa:hover {
+        .faz:hover {
             opacity: 0.7;
         }
 
         /* Set a specific color for each brand */
 
         /* Facebook */
-        .fa-youtube {
-            background: #b00;
+        .btn-youtube {
+            background: #b00 !important;
             color: white;
         }
 
-        .fa-facebook {
-            background: #3B5998;
+        .btn-facebook {
+            background: #3B5998 !important;
             color: white;
         }
 
-        .fa-instagram {
-            /* background: #125688; */
-            background: #8a3ab9;
-            color: white;
+        .btn-instagram {
+            background: #8a3ab9 !important;
+            color: white; 
         }
 
         .content {
@@ -121,34 +118,45 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
     
 </head>
-<body class="">
-    <div class="main-logo" >
-        <img src="https://via.placeholder.com/1000x1000/ddd.png?text=Logo+Quadrado" alt="Logo Interioriza">
+<body >
+    <div class="container-fluid p-0">
+        <div id="main-container">
+            <div class="row">
+                <div class="col-6 offset-3 col-md-6 offset-md-3 text-center py-5">
+                    <img class="img-fluid" src="https://via.placeholder.com/350x350/ddd.png?text=Logo+Quadrado" alt="Logo Interioriza">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4 text-center mt-2">
+                    <a class="btn btn-lg btn-default btn-youtube btn-danger disabled"  href="#" >
+                        <i class="fa fa-youtube-play mr-2" aria-hidden="true"></i> em&nbsp;breve
+                    </a>
+                </div>
+                <div class="col-12 col-md-4 text-center mt-2 text-lg">
+                    <a class="btn btn-lg btn-default btn-facebook btn-primary disabled"  href="#">
+                        <i class="fa fa-facebook mr-2" aria-hidden="true"></i> em&nbsp;breve
+                    </a>
+                </div>
+                <div class="col-12 col-md-4 text-center mt-2">
+                    <a class="btn btn-lg btn-default btn-instagram btn-dark"  href="https://www.instagram.com/interioriza.com.br">
+                        <i class="fa fa-instagram mr-2" aria-hidden="true"></i> @interioriza.com.br
+                    </a>
+                </div>
+            </div>
+           
+        </div>
+        <div class="content">
+            <h3>Conheça o interior, onde uma nova vida te aguarda!</h3>
+            
+            <h2>Quem somos</h2>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate voluptatibus a, ad enim, eaque alias eius maxime sit perspiciatis ratione reprehenderit magni debitis error. Exercitationem nisi doloribus distinctio libero officiis.
+        </div>    
     </div>
-    <div class="social">
-        <div class="social-item">
-            <a href="#">
-                <span class="fa fa-youtube fa-2x"></span> <span class="social-label breve">em&nbsp;breve</span>
-            </a>
-        </div>
-        <div class="social-item">
-            <a href="#">
-                <span class="fa fa-facebook fa-2x"></span> <span class="social-label breve">em&nbsp;breve</span>
-            </a>
-        </div>
-        <div class="social-item">
-            <a href="https://www.instagram.com/interioriza.com.br">
-                <span class="fa fa-instagram fa-2x"></span> <span class="social-label">@interioriza.com.br</span>
-            </a>
-        </div>
-        
-    </div>
-    <div class="content">
-        <h3>Conheça o interior, onde uma nova vida te aguarda!</h3>
-        
-        <h2>Quem somos</h2>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate voluptatibus a, ad enim, eaque alias eius maxime sit perspiciatis ratione reprehenderit magni debitis error. Exercitationem nisi doloribus distinctio libero officiis.
-    </div>    
-        
+    
+    <!--  
+   
+   
+</div> 
+-->
 </body>
 </html>
