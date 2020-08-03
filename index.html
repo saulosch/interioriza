@@ -7,7 +7,7 @@
     
     <style>
         html { 
-            background: url("https://via.placeholder.com/3000x1200.png?text=Foto+do+interior") no-repeat center center fixed; 
+            background: url("images/balaton-hungary-1382653s.jpg") no-repeat center center fixed; 
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
@@ -41,6 +41,7 @@
         } /* 80% ja foi */
         
         div.social {
+            text-align: center;
             display: flex;
             justify-content: space-between;
             /* width: 90%; */
@@ -49,10 +50,21 @@
             padding-right: 5vw;
         }
 
+        .social-item {
+            text-align: center;
+            min-width: 200px;
+        }
+
         .social-label {
             font-size: 2em;
             font-family: 'Roboto', sans-serif;
             margin-left: 10px;
+            color: #fff;
+            text-shadow:
+                -1px -1px 0 #000,  
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000;
         }
 
          /* Style all font awesome icons */
@@ -93,8 +105,7 @@
             background-color: #333;
             color: #eee;
             font-family: 'Roboto', sans-serif;
-            
-            min-height: 80vh;
+            /* min-height: 80vh; */
             padding-left: 10vw;
             padding-right: 10vw;
             padding-top: 10vh;
@@ -111,29 +122,29 @@
     
 </head>
 <body class="">
-    <div class="main-logo">
+    <div class="main-logo" >
         <img src="https://via.placeholder.com/1000x1000/ddd.png?text=Logo+Quadrado" alt="Logo Interioriza">
     </div>
     <div class="social">
-        <div class="">
+        <div class="social-item">
             <a href="#">
-                <span class="fa fa-youtube fa-2x"></span> <span class="social-label breve">em breve</span>
+                <span class="fa fa-youtube fa-2x"></span> <span class="social-label breve">em&nbsp;breve</span>
             </a>
         </div>
-        <div class="">
+        <div class="social-item">
             <a href="#">
-                <span class="fa fa-facebook fa-2x"></span> <span class="social-label">Facebook</span>
+                <span class="fa fa-facebook fa-2x"></span> <span class="social-label breve">em&nbsp;breve</span>
             </a>
         </div>
-        <div class="">
-            <a href="#">
-                <span class="fa fa-instagram fa-2x"></span> <span class="social-label">Instagram</span>
+        <div class="social-item">
+            <a href="https://www.instagram.com/interioriza.com.br">
+                <span class="fa fa-instagram fa-2x"></span> <span class="social-label">@interioriza.com.br</span>
             </a>
         </div>
         
     </div>
     <div class="content">
-        < h3>Conheça o interior, onde uma nova vida te aguarda!</h3>
+        <h3>Conheça o interior, onde uma nova vida te aguarda!</h3>
         
         <h2>Quem somos</h2>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate voluptatibus a, ad enim, eaque alias eius maxime sit perspiciatis ratione reprehenderit magni debitis error. Exercitationem nisi doloribus distinctio libero officiis.
